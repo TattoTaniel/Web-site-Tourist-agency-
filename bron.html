@@ -1,0 +1,328 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.14568" type="text/javascript"></script>
+<script type="text/javascript">
+	JotForm.init(function(){
+
+ JotForm.calendarMonths = ["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"];
+ JotForm.calendarDays = ["Воскресенье","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"];
+ JotForm.calendarOther = {"today":"Сегодня"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("23", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""}); }, 0); });
+ } 
+ JotForm.setCalendar("23", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":""});
+    /*INIT-END*/
+	});
+
+   JotForm.prepareCalculationsOnTheFly([null,{"name":"input1","qid":"1","text":"Бронирование тура","type":"control_head"},null,{"name":"input3","qid":"3","text":"ФИО","type":"control_fullname"},{"description":"","name":"input4","qid":"4","text":"Дата рождения","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email22","qid":"22","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"date","qid":"23","text":"Дата","type":"control_datetime"},null,{"description":"","name":"typeA25","qid":"25","subLabel":"","text":"Выберите тур","type":"control_dropdown"},{"name":"submit26","qid":"26","text":"Забронировать","type":"control_button"},{"name":"divider","qid":"27","type":"control_divider"},{"description":"","name":"phoneNumber","qid":"28","text":"Контакты","type":"control_phone"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"input1","qid":"1","text":"Бронирование тура","type":"control_head"},null,{"name":"input3","qid":"3","text":"ФИО","type":"control_fullname"},{"description":"","name":"input4","qid":"4","text":"Дата рождения","type":"control_birthdate"},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,{"description":"","name":"email22","qid":"22","subLabel":"example@example.com","text":"Email","type":"control_email"},{"description":"","name":"date","qid":"23","text":"Дата","type":"control_datetime"},null,{"description":"","name":"typeA25","qid":"25","subLabel":"","text":"Выберите тур","type":"control_dropdown"},{"name":"submit26","qid":"26","text":"Забронировать","type":"control_button"},{"name":"divider","qid":"27","type":"control_divider"},{"description":"","name":"phoneNumber","qid":"28","text":"Контакты","type":"control_phone"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.14568" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.14568" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.14568" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?themeRevisionID=5dca5ac9a5e86d17235d90c1"/>
+<style type="text/css">
+    .form-label-left{
+        width:150px;
+    }
+    .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-label-right{
+        width:150px;
+    }
+    .form-all{
+        width:690px;
+        color:#000000 !important;
+        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-size:14px;
+    }
+    .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
+        color: false;
+    }
+
+</style>
+
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: "'Lucida Grande'", " 'Lucida Sans Unicode'", " 'Lucida Sans'", " Verdana", " Tahoma", " sans-serif", sans-serif;
+    }
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-family: "'Lucida Grande'", " 'Lucida Sans Unicode'", " 'Lucida Sans'", " Verdana", " Tahoma", " sans-serif", sans-serif;
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-family: "'Lucida Grande'", " 'Lucida Sans Unicode'", " 'Lucida Sans'", " Verdana", " Tahoma", " sans-serif", sans-serif;
+    }
+    .form-header-group {
+      font-family: "'Lucida Grande'", " 'Lucida Sans Unicode'", " 'Lucida Sans'", " Verdana", " Tahoma", " sans-serif", sans-serif;
+    }
+    .form-label {
+      font-family: "'Lucida Grande'", " 'Lucida Sans Unicode'", " 'Lucida Sans'", " Verdana", " Tahoma", " sans-serif", sans-serif;
+    }
+  
+    
+  
+    .form-line {
+      margin-top: 12px 36px 12px 36px px;
+      margin-bottom: 12px 36px 12px 36px px;
+    }
+  
+    .form-all {
+      width: 590px;
+    }
+  
+    .form-label-left,
+    .form-label-right,
+    .form-label-left.form-label-auto,
+    .form-label-right.form-label-auto {
+      width: 150px;
+    }
+  
+    .form-all {
+      font-size: 14pxpx
+    }
+    .form-all .qq-upload-button,
+    .form-all .qq-upload-button,
+    .form-all .form-submit-button,
+    .form-all .form-submit-reset,
+    .form-all .form-submit-print {
+      font-size: 14pxpx
+    }
+    .form-all .form-pagebreak-back-container,
+    .form-all .form-pagebreak-next-container {
+      font-size: 14pxpx
+    }
+  
+    .supernova .form-all, .form-all {
+      background-color: rgba(226,1,95,0.17);
+      border: 1px solid transparent;
+    }
+  
+    .form-all {
+      color: #000000;
+    }
+    .form-header-group .form-header {
+      color: #000000;
+    }
+    .form-header-group .form-subHeader {
+      color: #000000;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label {
+      color: #000000;
+    }
+    .form-sub-label {
+      color: #1a1a1a;
+    }
+  
+    .supernova {
+      background-color: #ffffff;
+    }
+    .supernova body {
+      background: transparent;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #fff;
+    }
+  
+    .supernova {
+      background-image: none;
+    }
+    #stage {
+      background-image: none;
+    }
+  
+    .form-all {
+      background-image: none;
+    }
+  
+  .ie-8 .form-all:before { display: none; }
+  .ie-8 {
+    margin-top: auto;
+    margin-top: initial;
+  }
+.form-submit-button{
+  border-radius:15%;
+  background-color:#e2015f;
+}
+ 
+</style>
+
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/buttons/form-submit-button-simple_pink.css?3.3.14568"/>
+<form class="jotform-form" action="https://submit.jotform.com/submit/193554118199366/" method="post" name="form_193554118199366" id="193554118199366" accept-charset="utf-8">
+  <input type="hidden" name="formID" value="193554118199366" />
+  <input type="hidden" id="JWTContainer" value="" />
+  <input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group ">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">
+              Бронирование тура
+            </h1>
+            <div id="subHeader_1" class="form-subHeader">
+              Пожалуйста, проверьте данные паспорта с введенными
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+        <label class="form-label form-label-top" id="label_3" for="prefix_3">
+          ФИО
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_3" class="form-input-wide jf-required">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" id="prefix_3" name="q3_input3[prefix]" class="form-textbox" size="4" value="" data-component="prefix" aria-labelledby="label_3 sublabel_3_prefix" required="" />
+              <label class="form-sub-label" for="prefix_3" id="sublabel_3_prefix" style="min-height:13px"> Фамилия </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" id="first_3" name="q3_input3[first]" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" required="" />
+              <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px"> Имя </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" id="last_3" name="q3_input3[last]" class="form-textbox validate[required]" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" required="" />
+              <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px"> Отчество </label>
+            </span>
+          </div>
+        </div>
+      </li>
+    
+      <li class="form-line" data-type="control_phone" id="id_28">
+        <label class="form-label form-label-left form-label-auto" id="label_28" for="input_28_area"> Контакты </label>
+        <div id="cid_28" class="form-input">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="tel" id="input_28_area" name="q28_phoneNumber[area]" class="form-textbox" size="6" value="" data-component="areaCode" aria-labelledby="label_28" />
+              <span class="phone-separate" aria-hidden="true">
+                 -
+              </span>
+              <label class="form-sub-label" for="input_28_area" id="sublabel_28_area" style="min-height:13px">  </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="tel" id="input_28_phone" name="q28_phoneNumber[phone]" class="form-textbox" size="12" value="" data-component="phone" aria-labelledby="label_28 sublabel_28_phone" />
+              <label class="form-sub-label" for="input_28_phone" id="sublabel_28_phone" style="min-height:13px"> Phone Number </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_22">
+        <label class="form-label form-label-left form-label-auto" id="label_22" for="input_22"> Email </label>
+        <div id="cid_22" class="form-input">
+          <span class="form-sub-label-container " style="vertical-align:top">
+            <input type="email" id="input_22" name="q22_email22" class="form-textbox validate[Email]" size="30" value="" data-component="email" aria-labelledby="label_22 sublabel_input_22" />
+            <label class="form-sub-label" for="input_22" id="sublabel_input_22" style="min-height:13px"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_datetime" id="id_23">
+        <label class="form-label form-label-left form-label-auto" id="label_23" for="lite_mode_23"> Дата </label>
+        <div id="cid_23" class="form-input">
+          <div data-wrapper-react="true">
+            <div style="display:none">
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="day_23" name="q23_date[day]" size="2" data-maxlength="2" value="" aria-labelledby="label_23 sublabel_23_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_23" id="sublabel_23_day" style="min-height:13px"> Day </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_23" name="q23_date[month]" size="2" data-maxlength="2" value="" aria-labelledby="label_23 sublabel_23_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_23" id="sublabel_23_month" style="min-height:13px"> Month </label>
+              </span>
+              <span class="form-sub-label-container " style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_23" name="q23_date[year]" size="4" data-maxlength="4" value="" aria-labelledby="label_23 sublabel_23_year" />
+                <label class="form-sub-label" for="year_23" id="sublabel_23_year" style="min-height:13px"> Year </label>
+              </span>
+            </div>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <input type="text" class="form-textbox validate[limitDate, validateLiteDate]" id="lite_mode_23" size="12" data-maxlength="12" data-age="" value="" data-format="ddmmyyyy" data-seperator="-" placeholder="dd-mm-yyyy" aria-labelledby="label_23 sublabel_23_litemode" />
+              <img alt="Pick a Date" id="input_23_pick" src="https://cdn.jotfor.ms/images/calendar.png" style="vertical-align:middle;margin-left:5px" data-component="datetime" aria-hidden="true" />
+              <label class="form-sub-label" for="lite_mode_23" id="sublabel_23_litemode" style="min-height:13px"> Выберите дату </label>
+            </span>
+            <span class="form-sub-label-container " style="vertical-align:top">
+              <label class="form-sub-label" for="input_23_pick" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap"> Date Picker Icon </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_25">
+        <label class="form-label form-label-left form-label-auto" id="label_25" for="input_25">
+          Выберите тур
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_25" class="form-input jf-required">
+          <select class="form-dropdown validate[required]" id="input_25" name="q25_typeA25" style="width:300px" data-component="dropdown" required="" aria-labelledby="label_25">
+            <option value="">  </option>
+            <option value="Горячий Египет "> Горячий Египет </option>
+            <option value="Лазурный берег"> Лазурный берег </option>
+            <option value="Тайланд"> Тайланд </option>
+            <option value="Новогодние Дубаи "> Новогодние Дубаи </option>
+            <option value="Швайц"> Швайц </option>
+            <option value="Прага"> Прага </option>
+            <option value="Токио "> Токио </option>
+            <option value="Сказочный Париж"> Сказочный Париж </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_26">
+        <div id="cid_26" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper ">
+            <button id="input_26" type="submit" class="form-submit-button form-submit-button-simple_pink" data-component="button">
+              Забронировать
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_27">
+        <div id="cid_27" class="form-input-wide">
+          <div data-component="divider" style="border-bottom:1px solid #e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px">
+          </div>
+        </div>
+      </li>
+    
+    </ul>
+  </div>
+ 
+  <input type="hidden" id="simple_spc" name="simple_spc" value="193554118199366" />
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "193554118199366-193554118199366";
+  </script>
+
+</form>
+
